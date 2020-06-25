@@ -1,13 +1,15 @@
 
   let myLibrary = [];
   //The book constructor
-  function Book(title, author, page, read){
-    this.title = title;
-    this.author = author;
-    this.page = page;
-    this.read = read;
+  class Book{
+    constructor(title, author, page, read){
+      this.title = title;
+      this.author = author;
+      this.page = page;
+      this.read = read;
+    }
 
-   }
+  };
    //Add book to array and display it
    function addBookToLibrary(b){
      if(!myLibrary.includes(b)){
